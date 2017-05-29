@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SmartDevLession2</string>
+    <string name="lorem_ipsum">Something Here</string>
+    <string name="btnNormal">Button</string>
+</resources>

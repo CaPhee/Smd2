@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            app:pageColor="@color/default_title_indicator_footer_color"
+            app:fillColor="@color/default_circle_indicator_page_color"
+            app:strokeColor="@color/default_title_indicator_selected_color"
+            android:theme="@style/CustomCirclePageIndicator"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/goto_second"
+            android:text="@string/btnNormal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:text="Hint"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
